@@ -1,0 +1,275 @@
+@prefix : <http://www.semanticweb.org/ricardoleal24/ontologies/condominios#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ricardoleal24/ontologies/condominios> .
+
+<http://www.semanticweb.org/ricardoleal24/ontologies/condominios> rdf:type owl:Ontology ;
+                                                                   owl:versionIRI <http://www.semanticweb.org/ricardoleal24/ontologies/condominios> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamento
+:ePagamento rdf:type owl:ObjectProperty ;
+            owl:inverseOf :ePagamentoinv ;
+            rdfs:domain :mPagamento ;
+            rdfs:range :Fracao .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamentoinv
+:ePagamentoinv rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#eProprietario
+:eProprietario rdf:type owl:ObjectProperty ;
+               owl:inverseOf :temProprietario .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#eRecDesp
+:eRecDesp rdf:type owl:ObjectProperty ;
+          rdfs:domain :lRecDesp ;
+          rdfs:range :Fracao .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#temProprietario
+:temProprietario rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Fracao ;
+                 rdfs:range :Proprietario .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Abr
+:Abr rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Ago
+:Ago rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Dez
+:Dez rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fev
+:Fev rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jan
+:Jan rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jul
+:Jul rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jun
+:Jun rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Mai
+:Mai rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Mar
+:Mar rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Nov
+:Nov rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Out
+:Out rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Set
+:Set rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#data
+:data rdf:type owl:DatatypeProperty ;
+      rdfs:domain :lRecDesp .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#descricao
+:descricao rdf:type owl:DatatypeProperty ;
+           rdfs:domain :lRecDesp .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Proprietario .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#entidade
+:entidade rdf:type owl:DatatypeProperty ;
+          rdfs:domain :lRecDesp .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mensalidade
+:mensalidade rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Fracao .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mes
+:mes rdf:type owl:DatatypeProperty ;
+     rdfs:domain :mPagamento .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Proprietario .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#permilagem
+:permilagem rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Fracao .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#telefone
+:telefone rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Proprietario .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#tipo
+:tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :lRecDesp .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#valor
+:valor rdf:type owl:DatatypeProperty ;
+       rdfs:domain :lRecDesp .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Apartamento
+:Apartamento rdf:type owl:Class ;
+             rdfs:subClassOf :Espaco .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Espaco
+:Espaco rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao
+:Fracao rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Garagem
+:Garagem rdf:type owl:Class ;
+         rdfs:subClassOf :Espaco .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Loja
+:Loja rdf:type owl:Class ;
+      rdfs:subClassOf :Espaco .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario
+:Proprietario rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp
+:lRecDesp rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento
+:mPagamento rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mp1Dto
+:mp1Dto rdf:type owl:NamedIndividual ,
+                 :mPagamento ;
+        :ePagamento <http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Dto> ;
+        :Abr 0 ,
+             1 ;
+        :Fev 1 ;
+        :Jan 1 ;
+        :Jun 0 ;
+        :Mai 0 ;
+        :Mar 1 .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mp1Esq
+:mp1Esq rdf:type owl:NamedIndividual ,
+                 :Apartamento ,
+                 :Espaco ,
+                 :Fracao ,
+                 :mPagamento ;
+        :ePagamento <http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Esq> ;
+        :Abr 0 ;
+        :Fev 1 ;
+        :Jan 1 ;
+        :Jul 0 ;
+        :Jun 0 ;
+        :Mai 0 ;
+        :Mar 1 .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Dto
+<http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Dto> rdf:type owl:NamedIndividual ,
+                                                                                :Apartamento ,
+                                                                                :Espaco ,
+                                                                                :Fracao ;
+                                                                       :ePagamentoinv :mp1Dto ;
+                                                                       :mensalidade 6.06 ;
+                                                                       :permilagem 50 .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Esq
+<http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Esq> rdf:type owl:NamedIndividual ,
+                                                                                :Apartamento ,
+                                                                                :Espaco ,
+                                                                                :Fracao ;
+                                                                       :ePagamentoinv :mp1Esq ;
+                                                                       :mensalidade 36.35 ;
+                                                                       :permilagem 34 .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/001
+<http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/001> rdf:type owl:NamedIndividual ,
+                                                                                      :lRecDesp ;
+                                                                             :data "2020-01-04" ;
+                                                                             :descricao "Manutenção da conta" ;
+                                                                             :entidade "CGD" ;
+                                                                             :tipo "Despesa" ;
+                                                                             :valor 7.28 .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/002
+<http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/002> rdf:type owl:NamedIndividual ,
+                                                                                      :lRecDesp ;
+                                                                             :data "2020-01-06" ;
+                                                                             :descricao "Janeiro" ;
+                                                                             :entidade "7º Esq" ;
+                                                                             :tipo "Receita" ;
+                                                                             :valor 64.00 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

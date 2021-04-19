@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#"
+     xml:base="http://www.semanticweb.org/ricardoleal24/ontologies/condominios"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:condominios="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamento">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamentoinv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamentoinv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#ePagamentoinv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#eProprietario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#eProprietario">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#temProprietario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#eRecDesp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#eRecDesp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#temProprietario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#temProprietario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Abr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Abr">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Ago -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Ago">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Dez -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Dez">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fev -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fev">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jul -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jul">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jun -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Jun">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Mai -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Mai">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Mar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Mar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Nov -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Nov">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Out -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Out">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Set -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Set">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#descricao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#descricao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#entidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#entidade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mensalidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mensalidade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#permilagem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#permilagem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#telefone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#telefone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#tipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#valor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#valor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Apartamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Apartamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Espaco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Espaco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Espaco"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Garagem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Garagem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Espaco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Loja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Loja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Espaco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Proprietario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mp1Dto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mp1Dto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mPagamento"/>
+        <ePagamento rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Dto"/>
+        <Abr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Abr>
+        <Abr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Abr>
+        <Fev rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Fev>
+        <Jan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Jan>
+        <Jun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Jun>
+        <Mai rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Mai>
+        <Mar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Mar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mp1Esq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#mp1Esq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Apartamento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+        <ePagamento rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Esq"/>
+        <Abr rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Abr>
+        <Fev rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Fev>
+        <Jan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Jan>
+        <Jul rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Jul>
+        <Jun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Jun>
+        <Mai rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Mai>
+        <Mar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Mar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Dto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Dto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Apartamento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+        <mensalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.06</mensalidade>
+        <permilagem rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</permilagem>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Esq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#1Esq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Apartamento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#Fracao"/>
+        <mensalidade rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.35</mensalidade>
+        <permilagem rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</permilagem>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+        <data>2020-01-04</data>
+        <descricao>Manutenção da conta</descricao>
+        <entidade>CGD</entidade>
+        <tipo>Despesa</tipo>
+        <valor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.28</valor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lr2020/002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/condominios#lRecDesp"/>
+        <data>2020-01-06</data>
+        <descricao>Janeiro</descricao>
+        <entidade>7º Esq</entidade>
+        <tipo>Receita</tipo>
+        <valor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64.00</valor>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

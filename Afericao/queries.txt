@@ -1,0 +1,26 @@
+ 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/ricardoleal24/ontologies/condominios#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+1-
+SELECT ?entidade WHERE {  
+    ?s a :lRecDesp;
+       :entidade ?entidade
+
+}
+
+2-
+SELECT * WHERE {  
+    ?s a :mPagamento;
+       :Abr "0".
+}
+
+3-
+SELECT (SUM(?valor) AS ?total) WHERE {
+    ?s a :lRecDesp ;
+       :tipo "Despesa" ;
+       :valor ?valor .
+}
+
