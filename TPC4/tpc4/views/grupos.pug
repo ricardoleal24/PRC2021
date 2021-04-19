@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  
+  .w3-container.w3-margin.w3-light-gray
+    h3 Tabela Periódica
+  .w3-container.w3-border
+    h4 Lista de Grupos
+    .w3-container.w3-margin
+      div.w3-row.w3-margin
+        div.w3-col.l3
+          table.w3-table-all
+            each g in grupos
+              tr
+                td
+                  a(href="/grupos/"+g.id) #{g.id} 
+                td #{g.name}
+  footer
+    .w3-container.w3-light-gray
+      .w3-container.w3-margin.w3-border
+        a(href="/") Voltar
+        
+
+    

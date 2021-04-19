@@ -1,0 +1,23 @@
+TPC4
+
+  - Criar um repo no GraphDB;
+
+  - Carregar a Tabela Periódica;
+
+  - Criar uma app Web:
+
+    - Página principal: menu de entrada
+
+      - Elementos
+
+      - Grupos
+
+      - Períodos
+
+    - Página de Elementos:
+
+      - uma tabela com os Elementos
+
+      - clicando numa linha quero ver a info do Elementos
+
+    - ...  

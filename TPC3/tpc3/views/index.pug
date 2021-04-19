@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .w3-container.w3-margin.w3-light-gray
+    h3 Info dos repositórios GraphDB
+  .w3-container.w3-border
+    h3 Lista repositórios
+    .w3-container.w3-margin
+      div.w3-row.w3-margin
+        div.w3-col.l10
+          table.w3-table-all
+            tr
+              th ID
+              th Título
+              th URI
+            each r in repositorios
+              tr 
+                td
+                  a(href="/"+r.id)= r.id
+                td= r.tit 
+                td= r.uri
+  footer
+    .w3-container.w3-light-gray
+      .w3-container.w3-margin.w3-border

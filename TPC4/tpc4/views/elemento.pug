@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  
+  .w3-container.w3-margin.w3-light-gray
+    h3 Tabela Periódica
+  .w3-container.w3-border
+    div.w3-row.w3-margin
+      h4 #{e.symb} #{e.name} (#{e.anumber})
+    .w3-container.w3-margin
+        div.w3-col.l3
+          table.w3-table-all
+            tr
+              th Nome
+              td #{e.name}
+            tr
+              th Symbol
+              td #{e.symb}
+            tr
+              th Atomic Number
+              td #{e.anumber}
+            tr
+              th Atomic Weight
+              td #{e.aweight}
+            tr
+              th Group
+              td #{e.group}
+            tr
+              th Period
+              td #{e.period}
+            tr
+              th Block
+              td #{e.block}
+            tr
+              th Color
+              td #{e.color}
+            tr
+              th Standard State
+              td #{e.sstate}
+            tr
+              th Registry ID
+              td #{e.crid}
+            tr
+              th Classification
+              td #{e.classi}
+  footer
+    .w3-container.w3-light-gray
+      .w3-container.w3-margin.w3-border
+        a(href="/elementos") Voltar
+        
+
+    

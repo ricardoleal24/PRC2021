@@ -1,0 +1,1550 @@
+{
+  "UCs": [
+    {
+      "id": "vf",
+      "designacao": "Verificação Formal",
+      "anoLetivo": "2020/2021"
+    },
+    {
+      "id": "ac",
+      "designacao": "Arquitetura e Cálculo",
+      "anoLetivo": "2020/2021"
+    },
+    {
+      "id": "prc",
+      "designacao": "Processamento e Representação de Conhecimento",
+      "anoLetivo": "2020/2021"
+    },
+    {
+      "id": "spln",
+      "designacao": "Scripting no Processamento de Linguagem Natural",
+      "anoLetivo": "2020/2021"
+    }
+  ],
+
+  "Professores": [
+    {
+      "id": "jcr",
+      "nome": "José Carlos Ramalho",
+      "ensina": "prc"
+    },
+    {
+      "id": "jj",
+      "nome": "José João",
+      "ensina": "spln"
+    },
+    {
+      "id": "mf",
+      "nome": "Maria Frade",
+      "ensina": "vf"
+    },
+    {
+      "id": "lsb",
+      "nome": "Luís Barbosa",
+      "ensina": "ac"
+    }
+  ],
+
+  "Alunos": [
+    {
+      "_id": "6067aadad152ae569465fb5d",
+      "name": {
+        "first": "Joanna",
+        "last": "Howe"
+      },
+      "fullname": "Joanna Howe",
+      "nickname": "jh",
+      "age": 22,
+      "number": "A37767",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadacef693655f4ba167",
+      "name": {
+        "first": "Lawson",
+        "last": "Wiggins"
+      },
+      "fullname": "Lawson Wiggins",
+      "nickname": "lw",
+      "age": 39,
+      "number": "A15562",
+      "ucs": [
+        "ac",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada1d1554e2417113f9",
+      "name": {
+        "first": "Janelle",
+        "last": "Solis"
+      },
+      "fullname": "Janelle Solis",
+      "nickname": "js",
+      "age": 39,
+      "number": "A5853",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada88b583dc3a6e9cd2",
+      "name": {
+        "first": "Eileen",
+        "last": "Evans"
+      },
+      "fullname": "Eileen Evans",
+      "nickname": "ee",
+      "age": 25,
+      "number": "A21340",
+      "ucs": [
+        "ac",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada5d83491e4493a9c5",
+      "name": {
+        "first": "Amanda",
+        "last": "Gilmore"
+      },
+      "fullname": "Amanda Gilmore",
+      "nickname": "ag",
+      "age": 35,
+      "number": "A40014",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadae1cdf511fe6ae2ae",
+      "name": {
+        "first": "Sandy",
+        "last": "Hampton"
+      },
+      "fullname": "Sandy Hampton",
+      "nickname": "sh",
+      "age": 35,
+      "number": "A78015",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada23c30d50d50d60b1",
+      "name": {
+        "first": "Branch",
+        "last": "Rosario"
+      },
+      "fullname": "Branch Rosario",
+      "nickname": "br",
+      "age": 40,
+      "number": "A39869",
+      "ucs": [
+        "vf",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada890699b75d25d9ef",
+      "name": {
+        "first": "May",
+        "last": "Mcconnell"
+      },
+      "fullname": "May Mcconnell",
+      "nickname": "mm",
+      "age": 36,
+      "number": "A64187",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadab83a774476538d6c",
+      "name": {
+        "first": "Laurel",
+        "last": "Pruitt"
+      },
+      "fullname": "Laurel Pruitt",
+      "nickname": "lp",
+      "age": 35,
+      "number": "A40176",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada9745b1c68f1b4751",
+      "name": {
+        "first": "Jaime",
+        "last": "Dennis"
+      },
+      "fullname": "Jaime Dennis",
+      "nickname": "jd",
+      "age": 23,
+      "number": "A8729",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada0c6b766980a72dba",
+      "name": {
+        "first": "Sue",
+        "last": "Jefferson"
+      },
+      "fullname": "Sue Jefferson",
+      "nickname": "sj",
+      "age": 22,
+      "number": "A82660",
+      "ucs": [
+        "ac",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada71ea007e0c1bd482",
+      "name": {
+        "first": "Landry",
+        "last": "Fuller"
+      },
+      "fullname": "Landry Fuller",
+      "nickname": "lf",
+      "age": 34,
+      "number": "A17213",
+      "ucs": [
+        "vf",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadadeb27f59022882cc",
+      "name": {
+        "first": "Ofelia",
+        "last": "Duke"
+      },
+      "fullname": "Ofelia Duke",
+      "nickname": "od",
+      "age": 28,
+      "number": "A27937",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada3dc35462620e2938",
+      "name": {
+        "first": "Flores",
+        "last": "Cardenas"
+      },
+      "fullname": "Flores Cardenas",
+      "nickname": "fc",
+      "age": 24,
+      "number": "A36401",
+      "ucs": [
+        "ac",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada97420bf48b8b8a11",
+      "name": {
+        "first": "Avila",
+        "last": "Burnett"
+      },
+      "fullname": "Avila Burnett",
+      "nickname": "ab",
+      "age": 23,
+      "number": "A73926",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada0fc315b200c53712",
+      "name": {
+        "first": "Barbara",
+        "last": "Joyner"
+      },
+      "fullname": "Barbara Joyner",
+      "nickname": "bj",
+      "age": 36,
+      "number": "A78770",
+      "ucs": [
+        "vf",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadae84fe7a06ac40d90",
+      "name": {
+        "first": "Lula",
+        "last": "Hardy"
+      },
+      "fullname": "Lula Hardy",
+      "nickname": "lh",
+      "age": 32,
+      "number": "A2401",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadaed19553ac62de9b8",
+      "name": {
+        "first": "Lara",
+        "last": "Sheppard"
+      },
+      "fullname": "Lara Sheppard",
+      "nickname": "ls",
+      "age": 32,
+      "number": "A37737",
+      "ucs": [
+        "vf",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadab6c5850a30659506",
+      "name": {
+        "first": "West",
+        "last": "Ingram"
+      },
+      "fullname": "West Ingram",
+      "nickname": "wi",
+      "age": 26,
+      "number": "A24821",
+      "ucs": [
+        "vf",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadaf62c44f5d9185ad3",
+      "name": {
+        "first": "Hendrix",
+        "last": "Stanley"
+      },
+      "fullname": "Hendrix Stanley",
+      "nickname": "hs",
+      "age": 35,
+      "number": "A72481",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadac34f0bd05be40dc4",
+      "name": {
+        "first": "Bobbi",
+        "last": "Baird"
+      },
+      "fullname": "Bobbi Baird",
+      "nickname": "bb",
+      "age": 23,
+      "number": "A54322",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada78f5b90f9d5d0b2b",
+      "name": {
+        "first": "Mavis",
+        "last": "Pena"
+      },
+      "fullname": "Mavis Pena",
+      "nickname": "mp",
+      "age": 37,
+      "number": "A16914",
+      "ucs": [
+        "prc",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada48d21acdaf237172",
+      "name": {
+        "first": "Bessie",
+        "last": "Jarvis"
+      },
+      "fullname": "Bessie Jarvis",
+      "nickname": "bj",
+      "age": 20,
+      "number": "A47292",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadac9da4c89516e74ba",
+      "name": {
+        "first": "Rosanna",
+        "last": "Thornton"
+      },
+      "fullname": "Rosanna Thornton",
+      "nickname": "rt",
+      "age": 37,
+      "number": "A34350",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada8785bce8e198508a",
+      "name": {
+        "first": "Lane",
+        "last": "Ortega"
+      },
+      "fullname": "Lane Ortega",
+      "nickname": "lo",
+      "age": 28,
+      "number": "A24782",
+      "ucs": [
+        "pri",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadadaf620e0eee239c1",
+      "name": {
+        "first": "Georgette",
+        "last": "Wilson"
+      },
+      "fullname": "Georgette Wilson",
+      "nickname": "gw",
+      "age": 34,
+      "number": "A62639",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada1eb05656f5c577cf",
+      "name": {
+        "first": "Byrd",
+        "last": "Hooper"
+      },
+      "fullname": "Byrd Hooper",
+      "nickname": "bh",
+      "age": 20,
+      "number": "A58255",
+      "ucs": [
+        "vf",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada946b66746d4a642a",
+      "name": {
+        "first": "Lori",
+        "last": "Barton"
+      },
+      "fullname": "Lori Barton",
+      "nickname": "lb",
+      "age": 23,
+      "number": "A12093",
+      "ucs": [
+        "ac",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadaae190c474abf49f5",
+      "name": {
+        "first": "Tiffany",
+        "last": "Clark"
+      },
+      "fullname": "Tiffany Clark",
+      "nickname": "tc",
+      "age": 32,
+      "number": "A62435",
+      "ucs": [
+        "ac",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadaed395cda4e497c20",
+      "name": {
+        "first": "Molina",
+        "last": "Wallace"
+      },
+      "fullname": "Molina Wallace",
+      "nickname": "mw",
+      "age": 26,
+      "number": "A84738",
+      "ucs": [
+        "vf",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadacfaf0f9e7249b346",
+      "name": {
+        "first": "Bartlett",
+        "last": "Dalton"
+      },
+      "fullname": "Bartlett Dalton",
+      "nickname": "bd",
+      "age": 35,
+      "number": "A52207",
+      "ucs": [
+        "vf",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadabebb9184601f73b1",
+      "name": {
+        "first": "Janna",
+        "last": "Burke"
+      },
+      "fullname": "Janna Burke",
+      "nickname": "jb",
+      "age": 38,
+      "number": "A12978",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada4b1c5355e035be55",
+      "name": {
+        "first": "Rhea",
+        "last": "Chaney"
+      },
+      "fullname": "Rhea Chaney",
+      "nickname": "rc",
+      "age": 37,
+      "number": "A5405",
+      "ucs": [
+        "vf",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadaf777ce5d8c7c8180",
+      "name": {
+        "first": "Claudine",
+        "last": "Durham"
+      },
+      "fullname": "Claudine Durham",
+      "nickname": "cd",
+      "age": 28,
+      "number": "A43521",
+      "ucs": [
+        "vf",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadaca6fa3720822310d",
+      "name": {
+        "first": "Douglas",
+        "last": "Bond"
+      },
+      "fullname": "Douglas Bond",
+      "nickname": "db",
+      "age": 26,
+      "number": "A78440",
+      "ucs": [
+        "ac",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada9d96dab4db2beab1",
+      "name": {
+        "first": "Brewer",
+        "last": "Boyer"
+      },
+      "fullname": "Brewer Boyer",
+      "nickname": "bb",
+      "age": 21,
+      "number": "A63351",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadaa6b958476cf4ce97",
+      "name": {
+        "first": "Diane",
+        "last": "Rutledge"
+      },
+      "fullname": "Diane Rutledge",
+      "nickname": "dr",
+      "age": 32,
+      "number": "A53825",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadab98187c3a4651cc7",
+      "name": {
+        "first": "Dianne",
+        "last": "Russo"
+      },
+      "fullname": "Dianne Russo",
+      "nickname": "dr",
+      "age": 22,
+      "number": "A23923",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada6b35ad1c6f8d8c89",
+      "name": {
+        "first": "Amelia",
+        "last": "Ellis"
+      },
+      "fullname": "Amelia Ellis",
+      "nickname": "ae",
+      "age": 34,
+      "number": "A18586",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadaa41d16384eb26230",
+      "name": {
+        "first": "Rodriquez",
+        "last": "Owen"
+      },
+      "fullname": "Rodriquez Owen",
+      "nickname": "ro",
+      "age": 28,
+      "number": "A23591",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadad526296bd8a5d3a3",
+      "name": {
+        "first": "Walton",
+        "last": "Ross"
+      },
+      "fullname": "Walton Ross",
+      "nickname": "wr",
+      "age": 21,
+      "number": "A30183",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada9a79e4b9d765d6de",
+      "name": {
+        "first": "Mcgowan",
+        "last": "Arnold"
+      },
+      "fullname": "Mcgowan Arnold",
+      "nickname": "ma",
+      "age": 20,
+      "number": "A15480",
+      "ucs": [
+        "pri",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada4746b61c6f361881",
+      "name": {
+        "first": "Doreen",
+        "last": "Griffin"
+      },
+      "fullname": "Doreen Griffin",
+      "nickname": "dg",
+      "age": 21,
+      "number": "A67876",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada4c05d96bb93b8321",
+      "name": {
+        "first": "Wilder",
+        "last": "Anthony"
+      },
+      "fullname": "Wilder Anthony",
+      "nickname": "wa",
+      "age": 34,
+      "number": "A84882",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada64534ace3f379e84",
+      "name": {
+        "first": "Greta",
+        "last": "Bass"
+      },
+      "fullname": "Greta Bass",
+      "nickname": "gb",
+      "age": 39,
+      "number": "A55025",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada8d84db1220833b87",
+      "name": {
+        "first": "Emma",
+        "last": "Barry"
+      },
+      "fullname": "Emma Barry",
+      "nickname": "eb",
+      "age": 28,
+      "number": "A28536",
+      "ucs": [
+        "vf",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada7a412c7722e33f3e",
+      "name": {
+        "first": "Alma",
+        "last": "Waters"
+      },
+      "fullname": "Alma Waters",
+      "nickname": "aw",
+      "age": 32,
+      "number": "A28699",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada4ff4880ccd4d594c",
+      "name": {
+        "first": "Adele",
+        "last": "Donaldson"
+      },
+      "fullname": "Adele Donaldson",
+      "nickname": "ad",
+      "age": 35,
+      "number": "A81261",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada0a2261fc4a85f3ed",
+      "name": {
+        "first": "Morris",
+        "last": "Frazier"
+      },
+      "fullname": "Morris Frazier",
+      "nickname": "mf",
+      "age": 32,
+      "number": "A20164",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada2f0e97a65969632a",
+      "name": {
+        "first": "Hoover",
+        "last": "Dunn"
+      },
+      "fullname": "Hoover Dunn",
+      "nickname": "hd",
+      "age": 31,
+      "number": "A74059",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada4cba022615af4bfb",
+      "name": {
+        "first": "Golden",
+        "last": "Brady"
+      },
+      "fullname": "Golden Brady",
+      "nickname": "gb",
+      "age": 37,
+      "number": "A74908",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada141595cfd03bc970",
+      "name": {
+        "first": "Mae",
+        "last": "Hicks"
+      },
+      "fullname": "Mae Hicks",
+      "nickname": "mh",
+      "age": 34,
+      "number": "A23992",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada95ffe4bc5afaf1da",
+      "name": {
+        "first": "Loraine",
+        "last": "Kidd"
+      },
+      "fullname": "Loraine Kidd",
+      "nickname": "lk",
+      "age": 37,
+      "number": "A51220",
+      "ucs": [
+        "vf",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadaf1e6a3eb1b3ce79c",
+      "name": {
+        "first": "Cotton",
+        "last": "Steele"
+      },
+      "fullname": "Cotton Steele",
+      "nickname": "cs",
+      "age": 21,
+      "number": "A72099",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadac67788500c2ba694",
+      "name": {
+        "first": "Tyler",
+        "last": "Bird"
+      },
+      "fullname": "Tyler Bird",
+      "nickname": "tb",
+      "age": 30,
+      "number": "A50197",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada154a3fab393488d8",
+      "name": {
+        "first": "Rochelle",
+        "last": "Richard"
+      },
+      "fullname": "Rochelle Richard",
+      "nickname": "rr",
+      "age": 33,
+      "number": "A8579",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada69174e74741cc704",
+      "name": {
+        "first": "Ferrell",
+        "last": "Noble"
+      },
+      "fullname": "Ferrell Noble",
+      "nickname": "fn",
+      "age": 37,
+      "number": "A8956",
+      "ucs": [
+        "vf",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadaee7ded11d7ba3e64",
+      "name": {
+        "first": "Kendra",
+        "last": "Knox"
+      },
+      "fullname": "Kendra Knox",
+      "nickname": "kk",
+      "age": 23,
+      "number": "A20771",
+      "ucs": [
+        "vf",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada30fbf68bf3f90e55",
+      "name": {
+        "first": "Downs",
+        "last": "Nunez"
+      },
+      "fullname": "Downs Nunez",
+      "nickname": "dn",
+      "age": 20,
+      "number": "A26328",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadac818a45921dd7585",
+      "name": {
+        "first": "Adams",
+        "last": "Thomas"
+      },
+      "fullname": "Adams Thomas",
+      "nickname": "at",
+      "age": 25,
+      "number": "A32534",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadad43432ced4cd8dd6",
+      "name": {
+        "first": "Cummings",
+        "last": "Best"
+      },
+      "fullname": "Cummings Best",
+      "nickname": "cb",
+      "age": 34,
+      "number": "A39894",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada44b7192e3f2ea702",
+      "name": {
+        "first": "Hendricks",
+        "last": "Tyson"
+      },
+      "fullname": "Hendricks Tyson",
+      "nickname": "ht",
+      "age": 34,
+      "number": "A55670",
+      "ucs": [
+        "ac",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada5c09f309405d3047",
+      "name": {
+        "first": "Aurora",
+        "last": "Horn"
+      },
+      "fullname": "Aurora Horn",
+      "nickname": "ah",
+      "age": 31,
+      "number": "A65957",
+      "ucs": [
+        "pri",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadaf304316f87ad4201",
+      "name": {
+        "first": "Gould",
+        "last": "Schwartz"
+      },
+      "fullname": "Gould Schwartz",
+      "nickname": "gs",
+      "age": 38,
+      "number": "A51334",
+      "ucs": [
+        "vf",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadaa8d6c720cea41ea1",
+      "name": {
+        "first": "Hall",
+        "last": "Doyle"
+      },
+      "fullname": "Hall Doyle",
+      "nickname": "hd",
+      "age": 35,
+      "number": "A14237",
+      "ucs": [
+        "vf",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada4d4e83e4a2603d5c",
+      "name": {
+        "first": "Chang",
+        "last": "Walters"
+      },
+      "fullname": "Chang Walters",
+      "nickname": "cw",
+      "age": 36,
+      "number": "A30186",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada91d3b6bb6d28facb",
+      "name": {
+        "first": "Yates",
+        "last": "Lucas"
+      },
+      "fullname": "Yates Lucas",
+      "nickname": "yl",
+      "age": 32,
+      "number": "A57862",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada9fd494e407f9c000",
+      "name": {
+        "first": "Winifred",
+        "last": "Sellers"
+      },
+      "fullname": "Winifred Sellers",
+      "nickname": "ws",
+      "age": 23,
+      "number": "A51032",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadaa48828ad448a5876",
+      "name": {
+        "first": "Julia",
+        "last": "Lancaster"
+      },
+      "fullname": "Julia Lancaster",
+      "nickname": "jl",
+      "age": 34,
+      "number": "A11294",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada502f60cb89fa2476",
+      "name": {
+        "first": "Erin",
+        "last": "Benton"
+      },
+      "fullname": "Erin Benton",
+      "nickname": "eb",
+      "age": 37,
+      "number": "A11285",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada90d574edcf402475",
+      "name": {
+        "first": "Evans",
+        "last": "Bruce"
+      },
+      "fullname": "Evans Bruce",
+      "nickname": "eb",
+      "age": 27,
+      "number": "A41061",
+      "ucs": [
+        "pri",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada2f42514ca43e6860",
+      "name": {
+        "first": "Haley",
+        "last": "Clarke"
+      },
+      "fullname": "Haley Clarke",
+      "nickname": "hc",
+      "age": 23,
+      "number": "A52522",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada301e61973c860ad2",
+      "name": {
+        "first": "Pittman",
+        "last": "Albert"
+      },
+      "fullname": "Pittman Albert",
+      "nickname": "pa",
+      "age": 40,
+      "number": "A32550",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada33d5576b5b212ce9",
+      "name": {
+        "first": "Dodson",
+        "last": "May"
+      },
+      "fullname": "Dodson May",
+      "nickname": "dm",
+      "age": 36,
+      "number": "A38581",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada246803ea50b265b2",
+      "name": {
+        "first": "Melisa",
+        "last": "Duncan"
+      },
+      "fullname": "Melisa Duncan",
+      "nickname": "md",
+      "age": 32,
+      "number": "A72488",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada6a32a69eb8e9900d",
+      "name": {
+        "first": "Mason",
+        "last": "Wilkinson"
+      },
+      "fullname": "Mason Wilkinson",
+      "nickname": "mw",
+      "age": 25,
+      "number": "A27465",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadad03a0b599a224f31",
+      "name": {
+        "first": "Boyer",
+        "last": "Slater"
+      },
+      "fullname": "Boyer Slater",
+      "nickname": "bs",
+      "age": 32,
+      "number": "A58424",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadaea4a4ffe7ccb74b3",
+      "name": {
+        "first": "Rosetta",
+        "last": "Nguyen"
+      },
+      "fullname": "Rosetta Nguyen",
+      "nickname": "rn",
+      "age": 32,
+      "number": "A68759",
+      "ucs": [
+        "pri",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada12a2ce6898f73cab",
+      "name": {
+        "first": "Annie",
+        "last": "White"
+      },
+      "fullname": "Annie White",
+      "nickname": "aw",
+      "age": 20,
+      "number": "A13000",
+      "ucs": [
+        "prc",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadafe348cc2b15b6f2e",
+      "name": {
+        "first": "Kimberly",
+        "last": "Pope"
+      },
+      "fullname": "Kimberly Pope",
+      "nickname": "kp",
+      "age": 26,
+      "number": "A31220",
+      "ucs": [
+        "pri",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadae63a55b8a70e2b6e",
+      "name": {
+        "first": "Sarah",
+        "last": "Puckett"
+      },
+      "fullname": "Sarah Puckett",
+      "nickname": "sp",
+      "age": 21,
+      "number": "A67201",
+      "ucs": [
+        "prc",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aada8b1a1ed846bcc025",
+      "name": {
+        "first": "Fowler",
+        "last": "Castro"
+      },
+      "fullname": "Fowler Castro",
+      "nickname": "fc",
+      "age": 24,
+      "number": "A66732",
+      "ucs": [
+        "ac",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aadab487ec59f6ae2602",
+      "name": {
+        "first": "Melton",
+        "last": "Cleveland"
+      },
+      "fullname": "Melton Cleveland",
+      "nickname": "mc",
+      "age": 23,
+      "number": "A34004",
+      "ucs": [
+        "prc",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada64b315bdd7bc3fb3",
+      "name": {
+        "first": "Hogan",
+        "last": "Lloyd"
+      },
+      "fullname": "Hogan Lloyd",
+      "nickname": "hl",
+      "age": 34,
+      "number": "A6369",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada1d343b61c15f3be7",
+      "name": {
+        "first": "Silvia",
+        "last": "Kemp"
+      },
+      "fullname": "Silvia Kemp",
+      "nickname": "sk",
+      "age": 29,
+      "number": "A33494",
+      "ucs": [
+        "vf",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadac2cb623ebffe9e73",
+      "name": {
+        "first": "Ruth",
+        "last": "Aguirre"
+      },
+      "fullname": "Ruth Aguirre",
+      "nickname": "ra",
+      "age": 30,
+      "number": "A34542",
+      "ucs": [
+        "vf",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadaee59b70efcb84206",
+      "name": {
+        "first": "English",
+        "last": "Vinson"
+      },
+      "fullname": "English Vinson",
+      "nickname": "ev",
+      "age": 30,
+      "number": "A60176",
+      "ucs": [
+        "pri",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aadacb3b735ec5de0f5e",
+      "name": {
+        "first": "Maura",
+        "last": "Hayes"
+      },
+      "fullname": "Maura Hayes",
+      "nickname": "mh",
+      "age": 24,
+      "number": "A47171",
+      "ucs": [
+        "vf",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada7e434d73ec109d54",
+      "name": {
+        "first": "Salinas",
+        "last": "Warner"
+      },
+      "fullname": "Salinas Warner",
+      "nickname": "sw",
+      "age": 24,
+      "number": "A64828",
+      "ucs": [
+        "prc",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aadaa98b214b4763441d",
+      "name": {
+        "first": "Ethel",
+        "last": "Grant"
+      },
+      "fullname": "Ethel Grant",
+      "nickname": "eg",
+      "age": 21,
+      "number": "A23532",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada29f0de38c58af432",
+      "name": {
+        "first": "Dominguez",
+        "last": "Alston"
+      },
+      "fullname": "Dominguez Alston",
+      "nickname": "da",
+      "age": 37,
+      "number": "A64763",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada120884e13977c74d",
+      "name": {
+        "first": "Jackson",
+        "last": "Jacobson"
+      },
+      "fullname": "Jackson Jacobson",
+      "nickname": "jj",
+      "age": 36,
+      "number": "A10378",
+      "ucs": [
+        "prc",
+        "ac"
+      ]
+    },
+    {
+      "_id": "6067aada61d3bca8fe98c2f2",
+      "name": {
+        "first": "Blevins",
+        "last": "Blankenship"
+      },
+      "fullname": "Blevins Blankenship",
+      "nickname": "bb",
+      "age": 34,
+      "number": "A19355",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada41044233cc517cfd",
+      "name": {
+        "first": "Melody",
+        "last": "Conley"
+      },
+      "fullname": "Melody Conley",
+      "nickname": "mc",
+      "age": 37,
+      "number": "A14095",
+      "ucs": [
+        "vf",
+        "vf"
+      ]
+    },
+    {
+      "_id": "6067aadad19da7c9ff84253b",
+      "name": {
+        "first": "Valencia",
+        "last": "Gilbert"
+      },
+      "fullname": "Valencia Gilbert",
+      "nickname": "vg",
+      "age": 36,
+      "number": "A21954",
+      "ucs": [
+        "ac",
+        "pri"
+      ]
+    },
+    {
+      "_id": "6067aada94b8d0cc2df02c33",
+      "name": {
+        "first": "Hurley",
+        "last": "Hardin"
+      },
+      "fullname": "Hurley Hardin",
+      "nickname": "hh",
+      "age": 23,
+      "number": "A77735",
+      "ucs": [
+        "vf",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada40951b8d10cb4367",
+      "name": {
+        "first": "Austin",
+        "last": "French"
+      },
+      "fullname": "Austin French",
+      "nickname": "af",
+      "age": 40,
+      "number": "A70128",
+      "ucs": [
+        "pri",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada089f308aaa1f9af6",
+      "name": {
+        "first": "Boyle",
+        "last": "Head"
+      },
+      "fullname": "Boyle Head",
+      "nickname": "bh",
+      "age": 33,
+      "number": "A74366",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada24bd28786e56da86",
+      "name": {
+        "first": "Angelia",
+        "last": "Beach"
+      },
+      "fullname": "Angelia Beach",
+      "nickname": "ab",
+      "age": 28,
+      "number": "A2647",
+      "ucs": [
+        "ac",
+        "prc"
+      ]
+    },
+    {
+      "_id": "6067aada799aa19979ecfb93",
+      "name": {
+        "first": "Tessa",
+        "last": "Dillard"
+      },
+      "fullname": "Tessa Dillard",
+      "nickname": "td",
+      "age": 27,
+      "number": "A62719",
+      "ucs": [
+        "prc",
+        "pri"
+      ]
+    }
+  ]
+}

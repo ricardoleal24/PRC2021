@@ -1,0 +1,632 @@
+
+@prefix : <http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc> .
+
+<http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#ensina
+:ensina rdf:type owl:ObjectProperty ;
+        owl:inverseOf :éEnsinadaPor ;
+        rdfs:domain :Professor ;
+        rdfs:range :UnidadeCurricular .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#frequenta
+:frequenta rdf:type owl:ObjectProperty ;
+           owl:inverseOf :éFrequentadaPor ;
+           rdfs:domain :Aluno ;
+           rdfs:range :UnidadeCurricular .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#éAlunoDe
+:éAlunoDe rdf:type owl:ObjectProperty ;
+          owl:inverseOf :éProfessorDe .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#éEnsinadaPor
+:éEnsinadaPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#éFrequentadaPor
+:éFrequentadaPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#éProfessorDe
+:éProfessorDe rdf:type owl:ObjectProperty ;
+              owl:propertyChainAxiom ( :ensina
+                                       :éFrequentadaPor
+                                     ) .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#anoLetivo
+:anoLetivo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#designação
+:designação rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#Aluno
+:Aluno rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :frequenta ;
+                         owl:someValuesFrom :UnidadeCurricular
+                       ] .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#Professor
+:Professor rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :ensina ;
+                             owl:someValuesFrom :UnidadeCurricular
+                           ] .
+
+
+###  http://www.semanticweb.org/ricardoleal24/ontologies/prc2021/uc#UnidadeCurricular
+:UnidadeCurricular rdf:type owl:Class .
+  
+#################################################################
+#    Individuals
+#################################################################
+   
+:vf rdf:type owl:NamedIndividual ,
+              :UnidadeCurricular ;
+    :anoLetivo "2020/2021" ;
+    :designação "Verificação Formal" .
+     
+:ac rdf:type owl:NamedIndividual ,
+              :UnidadeCurricular ;
+    :anoLetivo "2020/2021" ;
+    :designação "Arquitetura e Cálculo" .
+     
+:prc rdf:type owl:NamedIndividual ,
+              :UnidadeCurricular ;
+    :anoLetivo "2020/2021" ;
+    :designação "Processamento e Representação de Conhecimento" .
+     
+:spln rdf:type owl:NamedIndividual ,
+              :UnidadeCurricular ;
+    :anoLetivo "2020/2021" ;
+    :designação "Scripting no Processamento de Linguagem Natural" .
+    
+:jcr rdf:type owl:NamedIndividual ,
+            :Professor ;
+  :ensina :prc ;
+  :nome "José Carlos Ramalho .
+    
+:jj rdf:type owl:NamedIndividual ,
+            :Professor ;
+  :ensina :spln ;
+  :nome "José João .
+    
+:mf rdf:type owl:NamedIndividual ,
+            :Professor ;
+  :ensina :vf ;
+  :nome "Maria Frade .
+    
+:lsb rdf:type owl:NamedIndividual ,
+            :Professor ;
+  :ensina :ac ;
+  :nome "Luís Barbosa .
+    
+:A37767 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Joanna Howe" .
+    
+:A15562 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :ac;
+    :nome "Lawson Wiggins" .
+    
+:A5853 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Janelle Solis" .
+    
+:A21340 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :pri;
+    :nome "Eileen Evans" .
+    
+:A40014 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Amanda Gilmore" .
+    
+:A78015 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Sandy Hampton" .
+    
+:A39869 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :ac;
+    :nome "Branch Rosario" .
+    
+:A64187 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "May Mcconnell" .
+    
+:A40176 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Laurel Pruitt" .
+    
+:A8729 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Jaime Dennis" .
+    
+:A82660 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :ac;
+    :nome "Sue Jefferson" .
+    
+:A17213 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :prc;
+    :nome "Landry Fuller" .
+    
+:A27937 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Ofelia Duke" .
+    
+:A36401 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :ac;
+    :nome "Flores Cardenas" .
+    
+:A73926 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Avila Burnett" .
+    
+:A78770 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :ac;
+    :nome "Barbara Joyner" .
+    
+:A2401 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Lula Hardy" .
+    
+:A37737 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :vf;
+    :nome "Lara Sheppard" .
+    
+:A24821 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :vf;
+    :nome "West Ingram" .
+    
+:A72481 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Hendrix Stanley" .
+    
+:A54322 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Bobbi Baird" .
+    
+:A16914 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :ac;
+    :nome "Mavis Pena" .
+    
+:A47292 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Bessie Jarvis" .
+    
+:A34350 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Rosanna Thornton" .
+    
+:A24782 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :ac;
+    :nome "Lane Ortega" .
+    
+:A62639 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Georgette Wilson" .
+    
+:A58255 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :ac;
+    :nome "Byrd Hooper" .
+    
+:A12093 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :ac;
+    :nome "Lori Barton" .
+    
+:A62435 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :pri;
+    :nome "Tiffany Clark" .
+    
+:A84738 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :prc;
+    :nome "Molina Wallace" .
+    
+:A52207 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :pri;
+    :nome "Bartlett Dalton" .
+    
+:A12978 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Janna Burke" .
+    
+:A5405 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :vf;
+    :nome "Rhea Chaney" .
+    
+:A43521 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :pri;
+    :nome "Claudine Durham" .
+    
+:A78440 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :pri;
+    :nome "Douglas Bond" .
+    
+:A63351 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Brewer Boyer" .
+    
+:A53825 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Diane Rutledge" .
+    
+:A23923 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Dianne Russo" .
+    
+:A18586 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Amelia Ellis" .
+    
+:A23591 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Rodriquez Owen" .
+    
+:A30183 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Walton Ross" .
+    
+:A15480 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :ac;
+    :nome "Mcgowan Arnold" .
+    
+:A67876 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Doreen Griffin" .
+    
+:A84882 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Wilder Anthony" .
+    
+:A55025 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Greta Bass" .
+    
+:A28536 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :vf;
+    :nome "Emma Barry" .
+    
+:A28699 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Alma Waters" .
+    
+:A81261 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Adele Donaldson" .
+    
+:A20164 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Morris Frazier" .
+    
+:A74059 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Hoover Dunn" .
+    
+:A74908 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Golden Brady" .
+    
+:A23992 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Mae Hicks" .
+    
+:A51220 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :ac;
+    :nome "Loraine Kidd" .
+    
+:A72099 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Cotton Steele" .
+    
+:A50197 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Tyler Bird" .
+    
+:A8579 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Rochelle Richard" .
+    
+:A8956 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :ac;
+    :nome "Ferrell Noble" .
+    
+:A20771 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :pri;
+    :nome "Kendra Knox" .
+    
+:A26328 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Downs Nunez" .
+    
+:A32534 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Adams Thomas" .
+    
+:A39894 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Cummings Best" .
+    
+:A55670 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :vf;
+    :nome "Hendricks Tyson" .
+    
+:A65957 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :ac;
+    :nome "Aurora Horn" .
+    
+:A51334 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :pri;
+    :nome "Gould Schwartz" .
+    
+:A14237 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :ac;
+    :nome "Hall Doyle" .
+    
+:A30186 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Chang Walters" .
+    
+:A57862 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Yates Lucas" .
+    
+:A51032 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Winifred Sellers" .
+    
+:A11294 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Julia Lancaster" .
+    
+:A11285 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Erin Benton" .
+    
+:A41061 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :ac;
+    :nome "Evans Bruce" .
+    
+:A52522 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Haley Clarke" .
+    
+:A32550 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Pittman Albert" .
+    
+:A38581 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Dodson May" .
+    
+:A72488 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Melisa Duncan" .
+    
+:A27465 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Mason Wilkinson" .
+    
+:A58424 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Boyer Slater" .
+    
+:A68759 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :vf;
+    :nome "Rosetta Nguyen" .
+    
+:A13000 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :ac;
+    :nome "Annie White" .
+    
+:A31220 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :pri;
+    :nome "Kimberly Pope" .
+    
+:A67201 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :vf;
+    :nome "Sarah Puckett" .
+    
+:A66732 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :pri;
+    :nome "Fowler Castro" .
+    
+:A34004 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :prc;
+    :nome "Melton Cleveland" .
+    
+:A6369 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Hogan Lloyd" .
+    
+:A33494 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :prc;
+    :nome "Silvia Kemp" .
+    
+:A34542 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :prc;
+    :nome "Ruth Aguirre" .
+    
+:A60176 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :ac;
+    :nome "English Vinson" .
+    
+:A47171 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :pri;
+    :nome "Maura Hayes" .
+    
+:A64828 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :prc;
+    :nome "Salinas Warner" .
+    
+:A23532 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Ethel Grant" .
+    
+:A64763 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Dominguez Alston" .
+    
+:A10378 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :ac;
+    :nome "Jackson Jacobson" .
+    
+:A19355 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Blevins Blankenship" .
+    
+:A14095 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :vf;
+    :nome "Melody Conley" .
+    
+:A21954 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :pri;
+    :nome "Valencia Gilbert" .
+    
+:A77735 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :vf, :prc;
+    :nome "Hurley Hardin" .
+    
+:A70128 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :pri, :prc;
+    :nome "Austin French" .
+    
+:A74366 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Boyle Head" .
+    
+:A2647 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :ac, :prc;
+    :nome "Angelia Beach" .
+    
+:A62719 rdf:type owl:NamedIndividual ;
+    :frequenta
+     :prc, :pri;
+    :nome "Tessa Dillard" .
+    

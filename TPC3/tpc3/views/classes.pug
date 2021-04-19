@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  
+  .w3-container.w3-margin.w3-light-gray
+    h3 Classes do repositório #{repo}
+  .w3-container.w3-border
+    h3 Lista de Classes
+    .w3-container.w3-margin
+      div.w3-row.w3-margin
+        div.w3-col.l3
+          table.w3-table-all
+            each c in classes
+              tr
+                td
+                  a(href="/"+repo+"/enteties/"+c)= c
+
+  footer
+    .w3-container.w3-light-gray
+      .w3-container.w3-margin.w3-border
+        a(href="/") Voltar
+        
+
+    
