@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#"
+     xml:base="http://www.semanticweb.org/ricardoleal24/ontologies/mapa"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:mapa="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#temDestino -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#temDestino">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Ligacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#temOrigem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#temOrigem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Ligacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#descricao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#descricao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#distancia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#distancia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Ligacao"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#distrito -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#distrito">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#populacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#populacao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Ligacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Ligacao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+        <descricao>Occaecat labore quis et irure nulla Lorem. Exercitation excepteur tempor est ex incididunt sunt id veniam culpa reprehenderit. Qui culpa consectetur quis officia ipsum deserunt cupidatat fugiat. Aute aliquip non sit laborum cillum.</descricao>
+        <distrito>Porto</distrito>
+        <nome>Paços de Ferreira</nome>
+        <populacao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400888</populacao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c30">
+        <descricao>Laboris anim id est sunt id occaecat ullamco dolor aute consectetur. In duis irure esse qui duis quis pariatur anim cupidatat eu ea sunt elit. Culpa Lorem amet ad pariatur Lorem ad cupidatat ex sit dolor laborum.</descricao>
+        <distrito>Vila Real</distrito>
+        <nome>Santa Marta de Penaguião</nome>
+        <populacao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500265</populacao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c96">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Cidade"/>
+        <descricao>Magna officia ex ex pariatur do nisi id amet ad nisi tempor et dolor magna. Consectetur laboris deserunt eu deserunt cupidatat consectetur aute nostrud veniam exercitation proident ex. Est incididunt nostrud in ad magna commodo deserunt. Incididunt labore irure in esse ut deserunt. Et tempor aute elit id laborum magna fugiat deserunt anim enim incididunt elit.</descricao>
+        <distrito>Portalegre</distrito>
+        <nome>Marvão</nome>
+        <populacao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">315017</populacao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ricardoleal24/ontologies/mapa#l1-c30-c96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#l1-c30-c96">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#Ligacao"/>
+        <temDestino rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c96"/>
+        <temOrigem rdf:resource="http://www.semanticweb.org/ricardoleal24/ontologies/mapa#c30"/>
+        <distancia rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88.241</distancia>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
