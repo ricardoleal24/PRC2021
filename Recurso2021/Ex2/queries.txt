@@ -1,0 +1,58 @@
+ 
+Constrói os triplos da relação Tio
+
+CONSTRUCT {
+    ?s1 :eTio ?s2 .
+} WHERE {
+    ?s1 :temProgenitor ?p1.
+    ?s2 :temProgenitor ?p2.
+    ?p2 :temProgenitor ?p1.
+    filter(?s1 != ?s2 && ?p1 != ?p2)
+}
+
+Constrói os triplos da relação Trisavô
+
+CONSTRUCT {
+    ?s1 :eTrisavo ?s2 .
+} WHERE {
+    ?s2 :temProgenitor ?p1.
+    ?p1 :temProgenitor ?p2.
+    ?p2 :temProgenitor ?p3.
+    ?p3 :temProgenitor ?s1.
+    filter(?s1 != ?s2 && ?p1 != ?p2 && ?p2 != ?s2 && ?p1 != ?s1 && ?p2 != ?p3)
+}
+
+Constrói os triplos da relação Ascendentes
+
+CONSTRUCT {
+    ?a :eAscendente ?d .
+} WHERE {
+    ?d :temProgenitor+ ?a.
+}
+
+
+CONSTRUCT {
+    ?a :eMeioIrmao ?b .
+} WHERE {
+    ?a :temPai ?p1.
+    ?b :temPai ?p2.
+    ?a :temMae ?m1.
+    ?b :temMae ?m2.
+    filter(?a != ?b && ((?p1 = ?p2 && ?m1 != ?m2) || (?p1 != ?p2 && ?m1 = ?m2)))
+    
+}
+
+ Sexo
+CONSTRUCT {
+    ?mae :sexo "Feminino" . 
+    ?pai :sexo "Masculino" .
+} WHERE {
+    ?pessoa1 :temMae ?mae .
+    ?pessoa2 :temPai ?pai .
+}
+
+CONSTRUCT {
+    :José_Carlos_Leite_Ramalho_1967 :temRelacaoCom ?individuoX .
+} WHERE {
+    ?individuoX (:temProgenitor|:eProgenitorDe)+ :José_Carlos_Leite_Ramalho_1967 .
+}
