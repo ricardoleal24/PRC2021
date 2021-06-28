@@ -39,7 +39,18 @@ router.get('/filmes', function(req, res) {
       filter(?year = ${req.query.ano})
   } 
 `
-  }else{
+  }else if(req.query.gen){
+      var query = `
+      select ?title where { 
+        ?id a :Filme .
+        ?id :title ?title .
+        ?id :temGénero ?g .
+        ?g :nome ?n .
+        filter(?n = '${req.query.gen}')
+    } order by ?g
+      `
+  
+  }else {
     var query = `
     select ?id ?title ?year (count(?a) as ?natores) where { 
       ?id a :Filme .
@@ -55,6 +66,11 @@ router.get('/filmes', function(req, res) {
       console.dir(dados.data.results.bindings)
       var movies = dados.data.results.bindings.map(e => {
         if(req.query.ano){
+          return ({
+            title : e.title.value
+          })
+        }
+        else if(req.query.gen){
           return ({
             title : e.title.value
           })
@@ -88,6 +104,7 @@ router.get('/filmes/:id', function(req, res) {
     .then(dados =>{
       console.dir(dados.data.results.bindings)
       var movies = dados.data.results.bindings.map(e => {
+
         return({
           title : e.title.value,
           year : e.year.value,
@@ -103,6 +120,7 @@ router.get('/filmes/:id', function(req, res) {
 
 
 router.get('/atores' , function(req, res) {
+  
   console.log('entrou...', req.params.id)
   var query = `
   select distinct ?nome where { 
@@ -126,8 +144,8 @@ router.get('/atores' , function(req, res) {
     .catch(erro => res.json({error: erro}));
 });
 
-router.get('/atores/:id ' , function(req, res) {
-  console.log('entrou...', req.params.id)
+router.get('/atores/:id' , function(req, res) {
+  console.log('entrou atores id')
   var query = `
   select distinct ?title ?year where { 
     :${req.params.id} :éAtor ?f .
@@ -139,113 +157,37 @@ router.get('/atores/:id ' , function(req, res) {
 
   axios.get(getLink + encoded)
     .then(dados =>{
-      console.dir(dados.data.results.bindings)
       var filmes = dados.data.results.bindings.map(e => {
         return({
           title : e.title.value,
           year : e.year.value
         })
       })
-      console.dir(filmes)
       res.json(filmes)
     })
     .catch(erro => res.json({error: erro}));
 });
 
-
-//GET /api/modalidades/:id - Devolve a lista de EMD referentes à modalidade passada como parâmetro;
-router.get('/api/modalidades/:id' , function(req, res) {
-  console.log('entrou...', req.params.id)
+router.get('/generos' , function(req, res) {
+  
   var query = `
-  select ?s ?m ?n where {
-    ?s :temModalidade ?m .
-    ?m :nome ?n .
-    FILTER (?n = '${req.params.id}')
-    }	
+  select distinct ?g where { 
+    ?id a :Filme .
+    ?id :temGénero/:nome ?g .
+} order by ?g	
 `
-// Ou
-//select ?emd where {
-// :m_BTT ^:temModalidade ?emd .
-//}
-
   var encoded = encodeURIComponent(prefixes + query)
 
   axios.get(getLink + encoded)
     .then(dados =>{
-      console.dir(dados.data.results.bindings)
-      var emds = dados.data.results.bindings.map(e => {
+      var generos = dados.data.results.bindings.map(e => {
         return({
-          emd : e.s.value.split('emd_')[1]
+          genero : e.g.value
         })
       })
-      console.dir(emds)
-      res.json(emds)
+      res.json(generos)
     })
     .catch(erro => res.json({error: erro}));
-});
-
-// GET /api/atletas?gen=F - Devolve uma lista ordenada alfabeticamente com os nomes dos atletas de género feminino;
-// GET /api/atletas?clube=X - Devolve uma lista ordenada alfabeticamente com os nomes dos atletas do clube X
-router.get('/api/atletas' , function(req, res) {
-  console.log('req.params.query...', req.query.gen, req.query.clube)
-
-  if(req.query.gen){
-    var query = `
-    select ?n where {
-      ?s a :Emd;
-         :temAtleta ?a .
-      ?a :nome ?n .
-      ?a :genero ?g.
-    
-      FILTER(?g = '${req.query.gen}')
- 
-    } ORDER BY ASC(?n)
-    `
-    var encoded = encodeURIComponent(prefixes + query)
-    axios.get(getLink + encoded)
-      .then(dados =>{
-        console.dir(dados.data.results.bindings)
-        var atletasf = dados.data.results.bindings.map(e => {
-          return({
-            nomef : e.n.value
-          })
-        })
-        console.dir(atletasf)
-        res.json(atletasf)
-      })
-      .catch(erro => res.json({error: erro}));
-    }
-    else if(req.query.clube){
-
-      var query = `
-      select ?na where {
-        ?s a :Emd;
-          :temClube ?c .
-   	    ?c  :nome ?n .
-        ?s :temAtleta ?a .
-        ?a :nome ?na.
-          FILTER(?n = '${req.query.clube}')
-      } ORDER BY ASC(?n)
-      `
-      var encoded = encodeURIComponent(prefixes + query)
-
-      axios.get(getLink + encoded)
-        .then(dados =>{
-          console.dir(dados.data.results.bindings)
-          var atletasc = dados.data.results.bindings.map(e => {
-            return({
-              nomea : e.na.value
-            })
-          })
-          console.dir(atletasc)
-          res.json(atletasc)
-        })
-        .catch(erro => res.json({error: erro}));
-
-    }
-    else{
-      res.status(400).json({error: erro})
-    }
 });
 
 
